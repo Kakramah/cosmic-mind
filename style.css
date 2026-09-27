@@ -766,6 +766,52 @@ body {
 }
 
 /* ═══════════════════════════════════════
+   SOURCES (§4.9.7)
+   ═══════════════════════════════════════ */
+.sources-section {
+  position: relative;
+  z-index: 10;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 2rem 2rem 3rem;
+  color: var(--color-text-secondary);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  line-height: 1.9;
+}
+
+.sources-title {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: var(--color-text-primary);
+  margin-bottom: 1rem;
+}
+
+.sources-list {
+  padding-inline-start: 1.2rem;
+}
+
+.sources-list strong {
+  color: var(--color-text-primary);
+  font-weight: 600;
+}
+
+.sources-list a {
+  color: var(--color-hero-muted);
+  text-underline-offset: 3px;
+}
+
+.sources-list a:hover {
+  color: var(--color-hero);
+}
+
+.sources-list a:focus-visible {
+  outline: 2px solid var(--color-hero);
+  outline-offset: 2px;
+}
+
+/* ═══════════════════════════════════════
    SHARE (§8.6)
    ═══════════════════════════════════════ */
 .share-section {

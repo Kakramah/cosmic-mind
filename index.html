@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>هل في عقل الإنسان سرّ خلافته في الأرض؟</title>
+  <meta name="description" content="تأمل فلسفي غامر في المفارقة الكونية بين ضآلة الإنسان الجسدية وعظمة عقله الذي يسبر أغوار الوجود">
+  <meta name="author" content="𝓚𝓱𝓪𝓵𝓭𝓸𝓾𝓷𝓐𝓴𝓻𝓪𝓶𝓪𝓱">
+  <meta property="og:title" content="هل في عقل الإنسان سرّ خلافته في الأرض؟">
+  <meta property="og:description" content="تأمل فلسفي في المفارقة بين ضآلة الإنسان الجسدية وعظمة عقله الذي يسبر أغوار الكون">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="images/slide-01.jpg">
+  <meta property="og:url" content="https://kakramah.github.io/cosmic-mind/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- شريط تقدم القراءة العلوي (§8.3) -->
+  <div class="reading-progress-track" aria-hidden="true">
+    <div class="reading-progress-bar" id="progressBar"></div>
+  </div>
+
+  <!-- هالة الكشاف التوثيقي المخصص (§5.6) -->
+  <div class="spotlight-cursor" id="spotlightCursor" aria-hidden="true"></div>
+
+  <!-- شريط التنقل السيادي الزجاجي (§8.5) -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="#scene-hero" class="brand-block" aria-label="العودة للافتتاحية">
+        <img src="images/eagle-emblem-metal.svg" alt="" width="36" height="28" class="header-eagle">
+        <span class="brand-title">عقل الإنسان وسر الخلافة</span>
+      </a>
+      <nav class="main-nav" aria-label="التنقل الرئيسي">
+        <a href="#scene-scale" class="nav-link">صدمة المقياس</a>
+        <a href="#scene-grasp" class="nav-link">سبر الأغوار</a>
+        <a href="#scene-quote" class="nav-link">انطواء العالم</a>
+        <a href="#scene-closing" class="nav-link">الخاتمة</a>
+      </nav>
+      <div class="header-actions">
+        <button class="audio-btn" id="audioBtn" type="button" aria-label="تشغيل الصوت التأملي" title="صوت تأملي">
+          <svg class="audio-icon audio-icon--off" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+          <svg class="audio-icon audio-icon--on" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" hidden><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg>
+          <span class="audio-label">تأمل كوني</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- خلفيات الغلاف الكوني التفاعلي -->
+  <canvas id="starfield" aria-hidden="true" width="300" height="150"></canvas>
+  <div class="nebula" aria-hidden="true"></div>
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <main class="content-layer">
+
+    <!-- المشهد 1: الافتتاحية الكونية -->
+    <section id="scene-hero" class="scene scene--hero" aria-label="الافتتاحية">
+      <div class="hero-bg">
+        <img src="images/slide-01.jpg" alt="الأرض نقطة ضوء وحيدة تائهة في ظلمة الفضاء" class="hero-bg__img lightbox-trigger" width="1600" height="900" data-title="العزلة في الفراغ الأبدي" data-desc="تصوّر بصري لكوكب الأرض نقطةً شاحبة وسط عتمة لا تنتهي. لا صخب يدوم، ولا مركز في الفضاء إلا ما يمنحه الوعي لنفسه.">
+        <div class="hero-bg__overlay"></div>
+      </div>
+      <div class="container hero-content">
+        <div class="hero-badge reveal">تأمل فلسفي في مفارقة الوجود</div>
+        <h1 class="hero-question">
+          هل في <span class="hero-highlight">عقل الإنسان</span><br>
+          سرّ خلافته في الأرض؟
+        </h1>
+      </div>
+      <div class="scroll-hint" aria-hidden="true">
+        <span class="scroll-hint__text">تأمّل</span>
+        <div class="scroll-hint__arrow"></div>
+      </div>
+    </section>
+
+    <!-- الحركة الأولى: صدمة المقياس والضآلة -->
+    <section id="scene-scale" class="scene" aria-label="صدمة المقياس">
+      <div class="container">
+        <div class="split-block">
+          <div class="split-block__visual reveal">
+            <figure class="scene-figure" data-tilt>
+              <img src="images/slide-02.jpg" alt="تصوّر بصري: ظل إنسان يقف وحيداً أمام اتساع درب التبانة" class="scene-figure__img lightbox-trigger" width="1400" height="1050" loading="lazy" data-title="وقفة الجسد أمام الصمت" data-desc="تصوّر بصري لوقوف الإنسان على حافة الأفق. الجسد ضئيل يضيع في النسيم، لكن السؤال الذي يطرحه يملأ السماء كلها.">
+              <figcaption class="scene-figure__caption">تصوّر بصري: وقفة الجسد أمام صمت الامتداد</figcaption>
+              <div class="figure-sheen" aria-hidden="true"></div>
+            </figure>
+          </div>
+          <div class="split-block__text reveal reveal--delay-1">
+            <span class="section-indicator">الحركة الأولى · المقياس</span>
+            <p class="scene-text">
+              يقف الإنسان ليلاً، فيرفع بصره إلى السماء الممتدة، فيسقط في صمتٍ مباغت.
+            </p>
+            <p class="scene-text">
+              لا يعادل حجم <span class="text-glow">كوكب الأرض</span> نفسه
+              <span class="text-glow">ذرةَ سكر</span>
+              إذا ما قورن بحجم هذا الكون المهول.
+            </p>
+            <p class="scene-text">
+              وإذا كان كوكبنا، بكل ما فيه من جبال ومحيطات وتاريخ وحضارات، بهذا الصغر المتناهي في زاويةٍ منسية،
+              فكيف <span class="text-glow">بحجم الإنسان</span>؟
+              جسدٌ هش لا يكاد يُرى إذا ابتعدت عنه خطوة فلكية واحدة.
+            </p>
+          </div>
+        </div>
+
+        <!-- مقاييس الوجود المقارنة (§8.4) -->
+        <div class="scale-metrics reveal reveal--delay-2">
+          <div class="metric-card">
+            <span class="metric-value"><span class="stat-number" data-target="1.7">1.7</span> م</span>
+            <span class="metric-label">قامة الإنسان</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-value"><span class="stat-number" data-target="12742">12,742</span> كم</span>
+            <span class="metric-label">قطر الأرض · ذرة السكر</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-value"><span class="stat-number" data-target="100000">100,000+</span> س.ض</span>
+            <span class="metric-label">امتداد درب التبانة</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-value"><span class="stat-number" data-target="93">93+</span> مليار س.ض</span>
+            <span class="metric-label">الكون المنظور</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true"><div class="divider__line"></div><div class="divider__dot"></div><div class="divider__line"></div></div>
+
+    <!-- الحركة الثانية: المنعطف وإدراك العقل -->
+    <section id="scene-grasp" class="scene" aria-label="المنعطف وإدراك العقل">
+      <div class="container">
+        <div class="split-block split-block--reverse">
+          <div class="split-block__visual reveal">
+            <figure class="scene-figure" data-tilt>
+              <img src="images/slide-03.jpg" alt="تصوّر بصري: يد إنسانية ترتفع نحو سديم لولبي مشتعل" class="scene-figure__img lightbox-trigger" width="1200" height="1600" loading="lazy" data-title="امتداد اليد نحو النواميس" data-desc="تصوّر بصري لمحاولة الإنسان الإحاطة بقوانين المادة. مسافة مليارات السنين الضوئية يقطعها الفكر في ارتداد طرف.">
+              <figcaption class="scene-figure__caption">تصوّر بصري: يد العقل تسبر نواميس المادة</figcaption>
+              <div class="figure-sheen" aria-hidden="true"></div>
+            </figure>
+          </div>
+          <div class="split-block__text reveal reveal--delay-1">
+            <span class="section-indicator">الحركة الثانية · المنعطف</span>
+            <p class="scene-text">
+              ومع ذلك… هنا ينقلب الميزان كله.
+            </p>
+            <p class="scene-text">
+              هذا الكون العظيم، باتساع مجراته وتلاطم سدمه، جمادٌ أصم لا يعي ذاته؛ لا يدري أنه يدور، ولا يحسب سرعة اندفاعه في الفراغ.
+            </p>
+            <p class="scene-text">
+              فإن هذا الكائن <span class="text-glow">المتناهي في الصغر</span>
+              استطاع بعقله أن يدرك شيئاً من اتساع هذا الكون العظيم،
+              وأن <span class="text-glow">يسبر أغواره</span> ويكتشف قوانينه،
+              وأن ينظر إلى أجرام تبعد عنه
+              <span class="text-glow">مليارات السنين الضوئية</span> فيقرأ تاريخ ولادتها وموتها.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true"><div class="divider__line"></div><div class="divider__dot"></div><div class="divider__line"></div></div>
+
+    <!-- الحركة الثالثة: البيت المنطوي -->
+    <section id="scene-quote" class="scene scene--quote" aria-label="بيت الإمام علي">
+      <div class="quote-bg">
+        <img src="images/slide-04.jpg" alt="تصوّر بصري: نور المجرة الذهبية ينبثق من داخل هيئة إنسان" class="quote-bg__img lightbox-trigger" width="1200" height="1600" loading="lazy" data-title="العالم المنطوي في الباطن" data-desc="تصوّر بصري لاتساع الداخل البشري. كل ما نراه في الخارج من مدارات وشموس إنما ينعكس في مرآة هذا العقل الواحد.">
+        <div class="quote-bg__overlay"></div>
+      </div>
+      <div class="container quote-content">
+        <p class="quote-intro reveal">وهذا يعيدنا إلى القول المنسوب إلى الإمام علي بن أبي طالب حين أسقط وهم المقاييس المادية:</p>
+        <blockquote class="quote-block reveal reveal--delay-1">
+          <div class="quote-glow" id="quoteGlow" aria-hidden="true"></div>
+          <p class="quote-verse shimmer-gold">«وَتَحْسَبُ أَنَّكَ جِرْمٌ صَغِيرٌ</p>
+          <p class="quote-verse shimmer-gold">وَفِيكَ انطَوَى العَالَمُ الأَكْبَرُ»</p>
+          <footer class="quote-attr">منسوب إلى الإمام علي بن أبي طالب</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- اقتباس معلّق (§8.3) -->
+    <aside class="pull-quote reveal" aria-label="اقتباس معلّق">
+      <div class="pull-quote__inner">
+        <p class="pull-quote__text">وفيك انطوى العالم الأكبر</p>
+      </div>
+    </aside>
+
+    <div class="divider" aria-hidden="true"><div class="divider__line"></div><div class="divider__dot"></div><div class="divider__line"></div></div>
+
+    <!-- القفلة وضربة النهاية -->
+    <section id="scene-closing" class="scene" aria-label="الخاتمة وضربة النهاية">
+      <div class="container">
+        <div class="closing-card reveal">
+          <p class="scene-text scene-text--closing scene-text--lead">
+            الحجم مقياس المادة وحدها، والوعي مقياس الحقيقة.
+          </p>
+          <p class="scene-text scene-text--closing">
+            فعلاً، كيف استطاع هذا الكائن <span class="text-hero">الضئيل</span>،
+            دون سائر الكائنات التي نعرفها،
+            أن يحيط بعقله بشيء مما هو متاح لنا
+            من <span class="text-hero">أسرار هذا الكون</span>؟
+          </p>
+          <p class="scene-text scene-text--closing scene-text--punch">
+            ليس السر في بسطة الجسد بل في هذا النور الذي يحمله. عقلٌ يستوعب الفضاء الشاسع ولا يستوعبه الفضاء، وفيه يكمن سر الخلافة والأمانة.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- المشاركة الاجتماعية (§8.6) -->
+    <div class="share-section" id="shareSection">
+      <button class="share-btn" id="shareBtn" type="button" aria-label="مشاركة هذا التأمل">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+        <span>شارك هذا التأمل</span>
+      </button>
+      <div class="share-fallback" id="shareFallback" hidden>
+        <a class="share-link" id="shareWhatsapp" href="#" target="_blank" rel="noopener noreferrer" aria-label="مشاركة عبر واتساب">واتساب</a>
+        <a class="share-link" id="shareTelegram" href="#" target="_blank" rel="noopener noreferrer" aria-label="مشاركة عبر تلغرام">تلغرام</a>
+        <a class="share-link" id="shareX" href="#" target="_blank" rel="noopener noreferrer" aria-label="مشاركة عبر إكس">إكس</a>
+        <a class="share-link" id="shareFacebook" href="#" target="_blank" rel="noopener noreferrer" aria-label="مشاركة عبر فيسبوك">فيسبوك</a>
+        <button class="share-link" id="shareCopy" type="button" aria-label="نسخ الرابط">نسخ الرابط</button>
+        <span class="share-confirm" id="shareConfirm" hidden>نُسخ</span>
+      </div>
+    </div>
+
+    <!-- الذيل السيادي (§3.5 · §5.13) -->
+    <footer class="site-footer">
+      <div class="footer-identity">
+        <p class="footer-sig" dir="ltr" style="unicode-bidi:isolate">𝓚𝓱𝓪𝓵𝓭𝓸𝓾𝓷𝓐𝓴𝓻𝓪𝓶𝓪𝓱</p>
+        <img src="images/eagle-emblem-metal.svg" alt="" class="footer-eagle" width="48" height="36" loading="lazy">
+        <div class="footer-accounts">
+          <a class="footer-chip" href="https://wa.me/966566702030" target="_blank" rel="noopener noreferrer" aria-label="واتساب">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            <span>واتساب</span>
+          </a>
+          <a class="footer-chip" href="https://instagram.com/khaldounakramah" target="_blank" rel="noopener noreferrer" aria-label="إنستغرام">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            <span>إنستغرام</span>
+          </a>
+          <a class="footer-chip" href="mailto:akramahkhaldoun@gmail.com" aria-label="البريد">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>البريد</span>
+          </a>
+        </div>
+        <p class="footer-copy" dir="ltr" style="unicode-bidi:isolate">جميع الحقوق محفوظة &copy; 2026 · 𝓚𝓱𝓪𝓵𝓭𝓸𝓾𝓷𝓐𝓴𝓻𝓪𝓶𝓪𝓱</p>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- نافذة المعاينة المكبرة (§8.3ب) -->
+  <dialog id="lightboxModal" class="lightbox-modal" aria-label="معاينة الصورة" aria-modal="true">
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox-container">
+      <button class="lightbox-close" id="lightboxClose" type="button" aria-label="إغلاق المعاينة">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <button class="lightbox-nav lightbox-nav--prev" id="lightboxPrev" type="button" aria-label="الصورة السابقة">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </button>
+      <button class="lightbox-nav lightbox-nav--next" id="lightboxNext" type="button" aria-label="الصورة التالية">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      </button>
+      <div class="lightbox-body">
+        <div class="lightbox-image-wrap">
+          <img id="lightboxImg" src="" alt="معاينة مكبرة" class="lightbox-image">
+        </div>
+        <div class="lightbox-caption">
+          <h2 id="lightboxTitle" class="lightbox-title"></h2>
+          <p id="lightboxDesc" class="lightbox-desc"></p>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
